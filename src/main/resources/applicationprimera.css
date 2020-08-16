@@ -1,0 +1,28 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root {
+	
+	-fx-background-image: url("RS13298.jpg");
+}
+
+
+.label {
+	
+	-fx-font-size: 40px;
+	-fx-text-fill: white; 
+	-fx-font-style : italic;
+	-fx-font-weight : bold;
+}
+
+
+#mensajes {
+	-fx-text-fill: red; 
+}
+
+
+
+.TextField {
+	-fx-length: 80px;
+}
+
+
