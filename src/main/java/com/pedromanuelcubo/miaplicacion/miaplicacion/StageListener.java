@@ -8,6 +8,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationListener;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,6 +19,7 @@ import javafx.util.Callback;
 
 
 @Component
+@RestController
 public class StageListener implements ApplicationListener<StageReadyEvent> {
 
 	private final String applicationTitle;
@@ -31,7 +34,7 @@ public class StageListener implements ApplicationListener<StageReadyEvent> {
 	}
 	
 	
-	
+	@RequestMapping("/")
 	@Override
 	public void onApplicationEvent(StageReadyEvent stageReadyEvent) {
 		

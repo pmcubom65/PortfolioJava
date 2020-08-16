@@ -4,10 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
-
-
-
-
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 import java.net.URL;
